@@ -63,7 +63,7 @@ def send_otp():
     try:
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()
-            server.login(ADMIN_EMAIL, "fxmf mxqm henj grny")
+            server.login(ADMIN_EMAIL, os.getenv("GMAIL_APP_PASSWORD"))
             server.send_message(msg)
         return jsonify({'message': 'OTP sent to your email ✅'})
     except Exception as e:
