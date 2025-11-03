@@ -45,8 +45,7 @@ def contact():
 
 
 OTP_STORE = {}
-ADMIN_EMAIL = "bvishal284@gmail.com"   # 👈 Replace with your email
-
+ADMIN_EMAIL = os.getenv("GMAIL_ID")
 
 @app.route('/send-otp', methods=['POST'])
 def send_otp():
