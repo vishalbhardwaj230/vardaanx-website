@@ -1,0 +1,24 @@
+body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url("../images/hero-bg.jpg") center/cover no-repeat fixed;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 1;
+  }
+  

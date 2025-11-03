@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | VardaanX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="{{ url_for('home') }}">🔥 VardaanX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url_for('courses') }}">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Section -->
+    <section class="py-5 mt-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Explore Our Courses</h2>
+            <p class="lead text-muted mb-5">
+                Learn from experienced mentors through hands-on, real-world projects — from fundamentals to advanced
+                industry applications.
+            </p>
+
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Python & Automation</h5>
+                            <p>Duration: 4 Weeks</p>
+                            <p>Master Python fundamentals, file automation, API integration, and mini projects.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Full Stack Web Development</h5>
+                            <p>Duration: 6 Weeks</p>
+                            <p>Learn HTML, CSS, JS, and modern frameworks to build responsive web applications.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Power BI & Data Analytics</h5>
+                            <p>Duration: 4 Weeks</p>
+                            <p>Learn data visualization, dashboarding, and analytics using Power BI & SQL.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">C# & .NET Backend Development</h5>
+                            <p>Duration: 6 Weeks</p>
+                            <p>Build enterprise-grade REST APIs with ASP.NET Core and SQL Server integration.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Azure Cloud & DevOps</h5>
+                            <p>Duration: 5 Weeks</p>
+                            <p>Learn cloud fundamentals, CI/CD pipelines, Docker, and deployment strategies.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Communication & Soft Skills</h5>
+                            <p>Duration: 3 Weeks</p>
+                            <p>Develop strong communication, writing, and presentation skills for tech careers.</p>
+                            <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="mb-0">© 2025 VardaanX | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
