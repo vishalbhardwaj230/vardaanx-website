@@ -5,6 +5,8 @@ from flask import Flask, render_template, request, jsonify
 import random
 import smtplib
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -98,7 +100,7 @@ def verify_otp():
 
     with smtplib.SMTP('smtp.gmail.com', 587) as server:
         server.starttls()
-        server.login(ADMIN_EMAIL, "fxmf mxqm henj grny")
+        server.login(ADMIN_EMAIL, os.getenv("GMAIL_APP_PASSWORD"))
         server.send_message(msg)
 
     OTP_STORE.pop(email, None)
