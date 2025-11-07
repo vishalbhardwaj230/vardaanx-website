@@ -1,0 +1,115 @@
+/* ========================================= */
+/* 🌌 Global Page Setup                      */
+/* ========================================= */
+.register-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #8ffcff;
+    overflow-x: hidden;      /* allow vertical scroll */
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 🔥 Full-Screen Blurred Background */
+.register-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1920&q=80')
+                center/cover no-repeat;
+    filter: blur(14px) brightness(0.5);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+/* 💫 Soft Dark Overlay (removes pink tone) */
+.register-page::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* ========================================= */
+/* 💎 Neon Registration Box                  */
+/* ========================================= */
+.neon-box {
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid #79ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(121, 255, 255, 0.6),
+                inset 0 0 12px rgba(121, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 10vh auto;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.neon-box:hover {
+    box-shadow: 0 0 25px #79ffff, inset 0 0 10px #79ffff;
+    transform: scale(1.02);
+}
+
+h2 {
+    text-align: center;
+    color: #7efcff;
+    text-shadow: 0 0 10px #7efcff;
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================= */
+/* ✍️ Input Fields & Button Styles            */
+/* ========================================= */
+input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 2px solid #0ff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.btn-neon {
+    width: 100%;
+    border: 2px solid #0ff;
+    color: #0ff;
+    background: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.btn-neon:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+/* ========================================= */
+/* ⚙️ Footer Text                            */
+/* ========================================= */
+.footer {
+    text-align: center;
+    color: #ccefff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 5px rgba(121, 255, 255, 0.8);
+}

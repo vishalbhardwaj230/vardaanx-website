@@ -1,1 +1,14 @@
+# Virtual environment
+.venv/
+
+# Database and compiled cache
+database/
+*.db
+
+# IDE configs
+.vscode/
+.idea/
+
+# Environment & secrets
 .env
+*.env

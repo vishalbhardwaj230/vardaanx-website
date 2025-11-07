@@ -23,6 +23,8 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="{{ url_for('courses') }}">Courses</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-warning ms-3 px-3"
+                            href="{{ url_for('register') }}">Login/Register</a></li>
                 </ul>
             </div>
         </div>
@@ -40,36 +42,443 @@
             <div class="row g-4">
                 <!-- Course 1 -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#pythonModal"
+                        style="cursor:pointer;">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Python & Automation</h5>
-                            <p>Duration: 4 Weeks</p>
+                            <h5 class="card-title text-primary">🐍 Python & Automation</h5>
+                            <p>Duration: 4-7 Weeks</p>
                             <p>Master Python fundamentals, file automation, API integration, and mini projects.</p>
                             <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <!-- Modal: Python & Automation -->
+                <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="pythonModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-light">
+                                <h5 class="modal-title" id="pythonModalLabel">🐍 Python & Automation — Complete Course
+                                    Details</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body"
+                                style="max-height: 500px; overflow-y: auto; text-align: left; line-height: 1.6;">
+
+                                <!-- 🐍 Basic Python Course -->
+                                <h5 class="fw-bold text-primary d-flex align-items-center gap-2">
+                                    <span>1. Basic Python Course – “From Zero to Beginner Developer”</span>
+                                </h5>
+
+                                <p><strong>🔸 What You’ll Learn (Topic-wise)</strong></p>
+                                <ul>
+                                    <li><strong>What is Programming? Why Python?</strong><br>Understand how coding
+                                        actually solves real-world problems. Discover why Python is behind products that
+                                        use AI.</li>
+                                    <li><strong>Installation & Setup (VS Code)</strong><br>Learn to install Python, set
+                                        up VS Code, and configure your first working environment like a real developer.
+                                    </li>
+                                    <li><strong>Syntax, Indentation & Code Flow</strong><br>Write clean, readable code —
+                                        learn how indentation controls logic and how Python executes line by line.</li>
+                                    <li><strong>Variables, Constants & Data Types</strong><br>Understand how data is
+                                        stored, named, and manipulated. You’ll master numbers, strings, and booleans.
+                                    </li>
+                                    <li><strong>Operators (Arithmetic, Logical, Comparison, Bitwise)</strong><br>Perform
+                                        calculations, comparisons, and smart conditions using Python’s operator toolkit.
+                                    </li>
+                                    <li><strong>Input / Output & Typecasting</strong><br>Build interactive programs that
+                                        take user input, convert types, and display dynamic results.</li>
+                                    <li><strong>Conditional Statements (if, elif, else)</strong><br>Add decision-making
+                                        power to your code — automate “if this, then that” logic.</li>
+                                    <li><strong>Loops (for, while, nested, loop control)</strong><br>Automate
+                                        repetition! Learn looping patterns that make code powerful and concise.</li>
+                                    <li><strong>Functions & Return Values</strong><br>Modularize your logic — create
+                                        reusable code blocks with parameters and return statements.</li>
+                                    <li><strong>Lists, Tuples, Sets & Dictionaries</strong><br>The real backbone of
+                                        Python — learn to store, organize, and retrieve data efficiently.</li>
+                                    <li><strong>String Operations & Regex Basics</strong><br>Clean, search, and
+                                        manipulate text data like a pro.</li>
+                                    <li><strong>Math, Random & OS Modules</strong><br>Use Python’s built-in tools to
+                                        perform calculations, generate randomness, and access files.</li>
+                                    <li><strong>File Handling (Read / Write / Append)</strong><br>Learn how to work with
+                                        files safely using context managers — real-world skill used in every project.
+                                    </li>
+                                    <li><strong>Exception Handling & Debugging</strong><br>Write error-proof code using
+                                        try-except-finally and trace issues like a pro.</li>
+                                    <li><strong>Flowcharts, Logic Building & Dry Runs</strong><br>Build your thinking
+                                        muscle — learn how to plan before coding.</li>
+                                    <li><strong>Mini Projects:</strong> Calculator App, Grading System, File-based
+                                        Student Record System.</li>
+                                </ul>
+
+                                <p class="mt-2"><strong>🧭 Course Snapshot:</strong><br>Duration: 4–5 weeks | Mode:
+                                    Online | Fees: ₹3,500</p>
+                                <p><strong>💥 Why You’ll Love It:</strong><br>Perfect for absolute beginners. You’ll
+                                    start from “What is Python?” and finish by building your own project. By the end,
+                                    you’ll think in code logic — and that’s where real developers begin.</p>
+
+                                <hr>
+
+                                <!-- ⚙️ Advanced Python -->
+                                <h5 class="fw-bold text-primary">⚙️ 2. Advanced Python Course – “Backend & Automation
+                                    Level”</h5>
+                                <p><strong>🔸 What You’ll Master (Topic-wise)</strong></p>
+                                <ul>
+                                    <li><strong>Object-Oriented Programming (OOPs):</strong> Classes, objects,
+                                        constructors, inheritance, encapsulation, polymorphism, magic (dunder) methods,
+                                        static & class methods.</li>
+                                    <li><strong>Modules, Packages, pip & Virtual Environments:</strong> Structure your
+                                        code professionally and manage dependencies like a pro.</li>
+                                    <li><strong>Data Structures (Practical Deep Dive):</strong> Learn stacks, queues,
+                                        linked lists, and dictionaries with practical use cases.</li>
+                                    <li><strong>File Automation Projects:</strong> Automate boring stuff — rename files,
+                                        move/copy folders, zip/unzip data, and log operations.</li>
+                                    <li><strong>JSON, CSV, XML Handling:</strong> Parse, read, and write real-world
+                                        configuration/data files.</li>
+                                    <li><strong>Database Connectivity:</strong> Connect Python to SQLite / MySQL /
+                                        PostgreSQL and perform CRUD operations.</li>
+                                    <li><strong>API Integration (requests library):</strong> Fetch live data from APIs
+                                        like weather, news, or stock markets using GET/POST.</li>
+                                    <li><strong>Flask / FastAPI (Intro to Backend Frameworks):</strong> Build REST APIs,
+                                        define routes, and handle JSON responses.</li>
+                                    <li><strong>Email & Scheduling Automation:</strong> Write scripts that send emails,
+                                        schedule reminders, and trigger timed tasks.</li>
+                                    <li><strong>Web Scraping:</strong> Extract data using BeautifulSoup and Selenium
+                                        basics.</li>
+                                    <li><strong>Excel Automation (pandas):</strong> Automate reports, generate Excel
+                                        summaries, and process files.</li>
+                                    <li><strong>PDF, Image & File Handling:</strong> Rename, extract, or merge PDFs
+                                        using libraries.</li>
+                                    <li><strong>Logging & Custom Exceptions:</strong> Build reliable, production-ready
+                                        code.</li>
+                                    <li><strong>Testing (Unit Test Basics):</strong> Learn fundamentals of testing to
+                                        ensure your programs never break.</li>
+                                    <li><strong>Projects:</strong> REST API, File Automation / Email Parser Tool.</li>
+                                </ul>
+
+                                <p class="mt-2"><strong>🧭 Course Snapshot:</strong><br>Duration: 6–7 weeks | Mode:
+                                    Online | Fees: ₹6,000</p>
+                                <p><strong>💥 Why It’s a Game Changer:</strong><br>This is where you become a real
+                                    developer. You’ll learn automation, backend API creation, and workflows used in
+                                    top service-based companies. You’ll finish this course ready for
+                                    freelance or junior dev roles.</p>
+
+                                <hr>
+
+                                <!-- 🚀 Master Python -->
+                                <h5 class="fw-bold text-primary">🚀 3. Complete Python Master Course – “Job-Ready +
+                                    Project-Based”</h5>
+                                <p><strong>🔸 What You’ll Unlock (All-in-One Mastery)</strong></p>
+                                <ul>
+                                    <li>Everything from Basic + Advanced — the full Python roadmap with real projects.
+                                    </li>
+                                    <li><strong>Backend Project (Flask / FastAPI):</strong> Build a complete web-based
+                                        project with database integration and routes.</li>
+                                    <li><strong>Data Visualization (Matplotlib & Pandas):</strong> Create interactive
+                                        charts and visual reports.</li>
+                                    <li><strong>Automation Project (Excel / Email / File):</strong> Build an automation
+                                        system that handles repetitive work automatically.</li>
+                                    <li><strong>Intro to AI/ML (NumPy, Pandas, Scikit-learn):</strong> Get an overview
+                                        of how data becomes predictions.</li>
+                                    <li><strong>Integration with APIs & Cloud Storage:</strong> Combine your Python
+                                        skills with cloud and external services.</li>
+                                    <li><strong>Project Portfolio:</strong> Web API, Desktop Automation Tool, Data
+                                        Processing Pipeline.</li>
+                                    <li><strong>Bonus Module:</strong> Hosting on Azure Cloud.</li>
+                                    <li><strong>Resume, GitHub & Interview Readiness:</strong> Build your portfolio and
+                                        prep for job interviews.</li>
+                                </ul>
+
+                                <p><strong>🧭 Course Snapshot:</strong><br>Total Duration: 10–12 weeks | Mode: Online |
+                                    Fees: ₹9,000</p>
+
+                                <h5 class="fw-bold text-primary mt-3">🌟 Exclusive Add-On Package (₹1,000)</h5>
+                                <ul>
+                                    <li>Weekly Personality Development & Communication Classes</li>
+                                    <li>Mock Interviews (Python, DSA & Backend Focus)</li>
+                                    <li>VardaanX Online Certification</li>
+                                    <li>Internship Certificate (after successful project)</li>
+                                    <li>Career Mentorship: Build your GitHub & LinkedIn Portfolio</li>
+                                </ul>
+
+                                <p><strong>💥 Why It’s the Ultimate Python Journey:</strong><br>You don’t just learn
+                                    coding here — you become a Python developer. By the end, you’ll have projects, a
+                                    portfolio, and confidence to apply for developer or automation roles — or start
+                                    freelancing.</p>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Register to Enroll</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Course 2 -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#powerBIModal"
+                        style="cursor:pointer;">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Full Stack Web Development</h5>
-                            <p>Duration: 6 Weeks</p>
-                            <p>Learn HTML, CSS, JS, and modern frameworks to build responsive web applications.</p>
+                            <h5 class="card-title text-primary">📊 Power BI & Data Analytics</h5>
+                            <p>Duration: 4–8 Weeks</p>
+                            <p>Learn data visualization, dashboarding, and analytics using Power BI & SQL.</p>
                             <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal: Course 2 -->
+                <div class="modal fade" id="powerBIModal" tabindex="-1" aria-labelledby="powerBIModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-light">
+                                <h5 class="modal-title" id="powerBIModalLabel">📊 Power BI & Data Analytics</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body" style="max-height: 500px; overflow-y: auto; text-align: left;">
+
+                                <h5 class="fw-bold text-primary">💡 1. Basic Power BI Course – “From Zero to Dashboard
+                                    Hero”</h5>
+                                <p><strong>🔸 What You’ll Learn (Topic-wise)</strong></p>
+                                <ul>
+                                    <li>Introduction to Business Intelligence (BI) — how product-based
+                                        companies use BI for smart decisions.</li>
+                                    <li>Power BI Ecosystem & Interface Tour — Desktop, Service, and Mobile overview.
+                                    </li>
+                                    <li>Connecting to Data Sources — Excel, CSV, databases, and live connections.</li>
+                                    <li>Data Cleaning with Power Query — merge, append, filter, replace, and automate
+                                        transformations.</li>
+                                    <li>Visualizing Data — bar charts, maps, cards, pie charts, and dashboards.</li>
+                                    <li>Basic DAX (Data Analysis Expressions) — creating smart, dynamic dashboards.</li>
+                                    <li>Publishing to Power BI Service — share securely online.</li>
+                                    <li><strong>Mini Project:</strong> Build your first Sales Dashboard from scratch.
+                                    </li>
+                                </ul>
+                                <p><strong>🧭 Course Snapshot:</strong><br>
+                                    Duration: 3 Weeks | Mode: Online | Fees: ₹4,000
+                                </p>
+                                <p><strong>💥 Why It’s Unmissable:</strong><br>
+                                    From “What is BI?” to “I built this dashboard!” in just 21 days — a perfect beginner
+                                    launchpad.
+                                </p>
+
+                                <hr>
+
+                                <h5 class="fw-bold text-primary">⚙️ 2. Advanced Power BI Course – “The Analyst’s Secret
+                                    Weapon”</h5>
+                                <p><strong>🔸 What You’ll Master (Topic-wise)</strong></p>
+                                <ul>
+                                    <li>Data Modeling & Relationships — star schema, fact/dimension tables, joins.</li>
+                                    <li>Advanced DAX — CALCULATE, FILTER, ALL, VALUES, and context transitions.</li>
+                                    <li>Dynamic Measures & Conditional Formatting — dashboards that react dynamically.
+                                    </li>
+                                    <li>Row-Level Security (RLS) — user-specific data views.</li>
+                                    <li>Performance Optimization — reduce refresh times, boost performance.</li>
+                                    <li>Power BI Service — manage workspaces, apps, and report sharing.</li>
+                                    <li>Integration with Power Automate & Power Apps — automation & interactivity.</li>
+                                    <li>Real-Time Dashboards — live data via APIs and DirectQuery.</li>
+                                    <li><strong>Capstone Project:</strong> Executive KPI Dashboard (real-world data).
+                                    </li>
+                                </ul>
+                                <p><strong>🧭 Course Snapshot:</strong><br>
+                                    Duration: 5 Weeks | Mode: Online | Fees: ₹6,000
+                                </p>
+                                <p><strong>💥 Why It’s Unmissable:</strong><br>
+                                    You’ll master corporate-level analytics and DAX. Build dashboards like Tech Giant
+                                    professionals.
+                                </p>
+
+                                <hr>
+
+                                <h5 class="fw-bold text-primary">🚀 3. Complete Power BI Course – “From Beginner to
+                                    Business Intelligence Pro”</h5>
+                                <p><strong>🔸 What You’ll Unlock (All-in-One)</strong></p>
+                                <ul>
+                                    <li>Everything from Basic + Advanced — full Power BI mastery.</li>
+                                    <li>Real-World Data Modeling — sales, finance, healthcare, HR, and operations.</li>
+                                    <li>End-to-End Project Portfolio — 2–3 professional dashboards for your resume.</li>
+                                    <li>Professional Design & Storytelling — present insights like an analyst.</li>
+                                    <li>Cloud & Collaboration (Power BI Service Mastery) — manage apps, refreshes, and
+                                        permissions.</li>
+                                    <li>Automation & Integration — Power Automate and Power Apps in action.</li>
+                                    <li><strong>Capstone Project:</strong> Build a real-world business dashboard
+                                        portfolio project.</li>
+                                </ul>
+                                <p><strong>🧭 Course Snapshot:</strong><br>
+                                    Total Duration: 8 Weeks | Mode: Online | Fees: ₹9,000
+                                </p>
+
+                                <hr>
+
+                                <h5 class="fw-bold text-primary">🌟 Optional Add-On Package (₹1,000)</h5>
+                                <ul>
+                                    <li>Personality Development & Presentation Skills</li>
+                                    <li>Mock Interviews (Power BI / DAX focus)</li>
+                                    <li>VardaanX Online Certification</li>
+                                    <li>Internship Certificate (post-project completion)</li>
+                                </ul>
+                                <p><strong>💥 Why Everyone’s Talking About It:</strong><br>
+                                    This isn’t just another Power BI course — it’s a full professional transformation
+                                    into a dashboard expert.
+                                </p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Register to Enroll</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Course 3 -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#networkingModal"
+                        style="cursor: pointer;">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Power BI & Data Analytics</h5>
-                            <p>Duration: 4 Weeks</p>
-                            <p>Learn data visualization, dashboarding, and analytics using Power BI & SQL.</p>
+                            <h5 class="card-title text-primary">🌐 Networking & Cloud</h5>
+                            <p>Duration: 4–10 Weeks</p>
+                            <p>Master real-world networking — from LANs to Cloud VNets with hands-on labs and
+                                certification prep.</p>
                             <a href="#" class="btn btn-warning">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal: Course 3 -->
+                <div class="modal fade" id="networkingModal" tabindex="-1" aria-labelledby="networkingModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-light">
+                                <h5 class="modal-title" id="networkingModalLabel">🌐 Networking & Cloud — Complete
+                                    Course Details</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body"
+                                style="max-height: 500px; overflow-y: auto; text-align: left; line-height: 1.6;">
+
+                                <!-- 🌐 Basic Networking -->
+                                <h5 class="fw-bold text-primary">🌐 1. Basic Networking Course – “From Wires to the Web”
+                                </h5>
+                                <p><strong>🔸 What You’ll Learn (Topic-wise)</strong></p>
+                                <ul>
+                                    <li><strong>Introduction to Networking (LAN, WAN, MAN,
+                                            Internet)</strong><br>Understand how the entire internet actually works —
+                                        from your Wi-Fi router to the global web.</li>
+                                    <li><strong>OSI & TCP/IP Models (Layer by Layer Clarity)</strong><br>Visualize how
+                                        data travels through the 7 layers of networking — the backbone of internet
+                                        communication.</li>
+                                    <li><strong>IP Addressing (IPv4 & IPv6) + Subnetting Basics</strong><br>Learn how
+                                        computers identify each other and master subnetting for efficient IP planning.
+                                    </li>
+                                    <li><strong>Network Devices: Router, Switch, Hub, Firewall</strong><br>Understand
+                                        their roles and how they interconnect to build reliable networks.</li>
+                                    <li><strong>DNS, DHCP & NAT Fundamentals</strong><br>Discover how domains resolve,
+                                        IPs assign, and data flows securely across networks.</li>
+                                    <li><strong>Cabling, Topology & Hardware Setup</strong><br>Understand how physical
+                                        connections and topologies define performance.</li>
+                                    <li><strong>Ping, Tracert & Basic Troubleshooting Tools</strong><br>Diagnose
+                                        real-world connectivity issues using practical network utilities.</li>
+                                    <li><strong>Mini Project:</strong> Design a Small Office Network with routers,
+                                        switches, and IP configurations.</li>
+                                </ul>
+
+                                <p class="mt-2"><strong>🧭 Course Snapshot:</strong><br>Duration: 4 weeks | Mode: Online
+                                    / Offline | Fees: ₹3,500</p>
+                                <p><strong>💥 Why You’ll Love It:</strong><br>This course makes networking simple.
+                                    You’ll stop fearing IPs and routers — and start designing real networks like IT
+                                    pros.</p>
+
+                                <hr>
+
+                                <!-- ⚙️ Advanced Networking -->
+                                <h5 class="fw-bold text-primary">⚙️ 2. Advanced Networking Course – “The Real Engineer’s
+                                    Playground”</h5>
+                                <p><strong>🔸 What You’ll Master (Topic-wise)</strong></p>
+                                <ul>
+                                    <li><strong>VLANs, Trunking & Inter-VLAN Routing:</strong> Segment and manage
+                                        enterprise networks efficiently.</li>
+                                    <li><strong>Static & Dynamic Routing Protocols (RIP, OSPF, EIGRP, BGP):</strong>
+                                        Configure routers and understand how data finds the fastest route.</li>
+                                    <li><strong>Network Security (ACLs, Firewalls, VPNs):</strong> Secure data flow with
+                                        rules, tunnels, and encryption.</li>
+                                    <li><strong>Load Balancing & High Availability:</strong> Learn how large-scale apps
+                                        handle millions of users without downtime.</li>
+                                    <li><strong>Network Monitoring Tools (Wireshark, PRTG, SNMP):</strong> Capture live
+                                        packets, analyze traffic, and monitor health.</li>
+                                    <li><strong>Introduction to SDN (Software Defined Networking):</strong> Explore the
+                                        next generation of programmable network control.</li>
+                                    <li><strong>Cloud Networking (Azure VNets, AWS VPCs, GCP Networks):</strong>
+                                        Understand how cloud platforms create and manage virtual networks.</li>
+                                    <li><strong>Project:</strong> Build & Simulate an Enterprise Network using Packet
+                                        Tracer / GNS3.</li>
+                                </ul>
+
+                                <p class="mt-2"><strong>🧭 Course Snapshot:</strong><br>Duration: 6 weeks | Mode: Online
+                                    / Offline | Fees: ₹6,000</p>
+                                <p><strong>💥 Why It’s a Game Changer:</strong><br>You’ll go from “student” to “network
+                                    engineer”. You’ll understand what Cisco engineers do daily, and prep for
+                                    certifications like <strong>CCNA / Network+</strong>.</p>
+
+                                <hr>
+
+                                <!-- 🚀 Complete Networking -->
+                                <h5 class="fw-bold text-primary">🚀 3. Complete Networking Course – “From Local LANs to
+                                    Global Clouds”</h5>
+                                <p><strong>🔸 What You’ll Unlock (All-in-One Mastery)</strong></p>
+                                <ul>
+                                    <li><strong>Everything from Basic + Advanced:</strong> Master physical and cloud
+                                        networking together.</li>
+                                    <li><strong>Hands-On Labs & Simulations:</strong> Configure, monitor, and
+                                        troubleshoot networks in Packet Tracer & GNS3.</li>
+                                    <li><strong>Enterprise-Level Networking:</strong> Learn how ISPs and enterprises
+                                        maintain uptime with redundancy.</li>
+                                    <li><strong>Network Architecture Design:</strong> Build multi-branch, scalable, and
+                                        secure topologies.</li>
+                                    <li><strong>Troubleshooting & Optimization:</strong> Solve real-world networking
+                                        challenges like latency or misconfigurations.</li>
+                                    <li><strong>Certification Prep:</strong> Tailored training for CCNA and CompTIA
+                                        Network+ exams.</li>
+                                </ul>
+
+                                <p><strong>🧭 Course Snapshot:</strong><br>Total Duration: 10 weeks | Mode: Online /
+                                    Offline | Fees: ₹8,500</p>
+
+                                <h5 class="fw-bold text-primary mt-3">🌟 Optional Add-On Package (₹1,000)</h5>
+                                <ul>
+                                    <li>Personality Development & Technical Communication</li>
+                                    <li>Mock Interviews (Networking / Cloud Focus)</li>
+                                    <li>VardaanX Online Certification</li>
+                                    <li>Internship Certificate (after lab project)</li>
+                                </ul>
+
+                                <p><strong>💥 Why It’s the Ultimate Networking Course:</strong><br>This isn’t just about
+                                    connecting cables — it’s about connecting careers.
+                                    By the end, you’ll:
+                                <ul>
+                                    <li>✅ Build real networks (Local + Cloud)</li>
+                                    <li>✅ Simulate enterprise-grade setups</li>
+                                    <li>✅ Be job-ready for IT support, NOC, or Cloud Networking roles</li>
+                                    <li>✅ Have portfolio-worthy projects</li>
+                                </ul>
+                                You don’t just learn networking — you <strong>engineer the internet itself</strong> 🌍
+                                </p>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Register to Enroll</button>
+                            </div>
                         </div>
                     </div>
                 </div>
